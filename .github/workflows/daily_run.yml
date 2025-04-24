@@ -1,9 +1,15 @@
-name: Run Daily Script
+# name: Run Daily Script
+
+# on:
+#   schedule:
+#     - cron: '0 6 * * *'  # Runs every day at 6 AM UTC
+#   workflow_dispatch:      # (Optional) manual trigger from GitHub UI
+name: Run Every Minute
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Runs every day at 6 AM UTC
-  workflow_dispatch:      # (Optional) manual trigger from GitHub UI
+    - cron: '*/1 * * * *'  # Runs every 1 minute
+  workflow_dispatch:        # Allows manual trigger too
 
 jobs:
   run-script:

@@ -3,3 +3,5 @@ openai
 langchain_community
 selenium
 chromedriver-autoinstaller
+pandas
+pickle

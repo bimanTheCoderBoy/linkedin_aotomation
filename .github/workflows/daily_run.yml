@@ -6,10 +6,10 @@
 #   workflow_dispatch:      # (Optional) manual trigger from GitHub UI
 name: Run Every Minute
 
-on:
-  schedule:
-    - cron: '*/1 * * * *'  # Runs every 1 minute
-  workflow_dispatch:        # Allows manual trigger too
+# on:
+  # schedule:
+  #   - cron: '*/1 * * * *'  # Runs every 1 minute
+  # workflow_dispatch:        # Allows manual trigger too
 
 jobs:
   run-script:
